@@ -1,3 +1,4 @@
+//traified by mickabouille
 
 //Patch function that replaces set or all occurrences of the given regexp pattern in the file with the given string.
 //Use EVAL to perform variable substitution on the string and/or the regexp pattern.
