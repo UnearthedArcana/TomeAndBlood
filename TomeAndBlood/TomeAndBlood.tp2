@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/TomeAndBlood~
 AUTHOR ~aquadrizzt~
-VERSION ~1.2~ 
+VERSION ~1.3~ 
 
 ALWAYS
 
@@ -245,18 +245,15 @@ LAF innate_metamagic INT_VAR sequencer_method = 4 END
 
 // -----------------------------
 
-/*
-BEGIN @55
-DESIGNATED 55
-SUBCOMPONENT @50 (GAME_IS ~bgee bg2ee eet iwdee~)
+BEGIN @56
+DESIGNATED 56
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @2
 //GROUP @7
 
-COPY_EXISTING ~sw1h01.itm~ ~override/qdtnb_metamagic.qd~ //detection for this component 
-
-//OUTER_SET sequencer_method = 5
-
-LAF semi_spont_sequencers END
-*/
+ACTION_IF !(FILE_EXISTS_IN_GAME ~d5__semi_spont_sequencers.d5~) BEGIN
+  INCLUDE ~TomeAndBlood/lib/semi_spont/semi_misc_functions.tpa~
+  LAF semi_spont_sequencers END
+END
 
 
 // -----------------------------

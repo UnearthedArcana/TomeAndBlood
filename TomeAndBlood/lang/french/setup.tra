@@ -23,7 +23,7 @@
 @53 = ~Metamagie innee, apprise depuis les parchemins ou a la generation de personnage~
 @54 = ~Metamagie innee, apprise depuis les parchemins SEULEMENT (pas pour les ensorceleurs)~
 // commented-out
-@55 = ~Sorts de metamagie, remplissage gratuit des sequenceurs (utilisable pat les arcanistes et les ensorceleurs multiclasses)~
+@56 = ~Sorts de metamagie: remplissage gratuit des sequenceurs~
 @66 = ~Sort de Familier inne~
 @70 = ~Changement de sorts pour les ensorceleurs~
 @71 = ~Changer les sorts a tous les niveaux~

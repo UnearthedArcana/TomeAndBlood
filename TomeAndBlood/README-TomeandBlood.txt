@@ -1,6 +1,6 @@
 # TomeAndBlood
 
-Tome And Blood: More Options for Wizards and Sorcerers v1.0
+Tome And Blood: More Options for Wizards and Sorcerers v1.3
 
 ## Overview
 
@@ -78,11 +78,15 @@ This component gives each specialist kit some active or passive innate abilities
 
 COMPONENTS 51, 52, 53, 54: Innate Metamagic
 
-These components make spell sequencers and contingencies into innate abilities (Chain Contingency becomes an HLA) so they don't cost spell slots; but "filling" them with spells still uses the spell slots associated with those spells.  These four components differ according to how you get metamagic:
+These components make spell sequencers and contingencies into innate abilities - and Chain Contingency becomes an HLA. This means they don't cost spell slots; but "filling" them with spells still uses the spell slots associated with those spells.  Using a sequencer will immediately give you access to the 'create sequencer' ability, so you can do it multiple times per day, as long as you have enough memorized spells. But note, these metamagic spells now have the "non-combat" flag - they are meant to help you *prepare* for battles ahead of time. No more casting Chain Contingency within the thick of battle!  These four components differ according to how you get metamagic:
 -- 51: all arcane casters get sequencer and contingency abilities automatically<br />
 -- 52: only mages and bards (not sorcerers) get sequencer and contingency abilities automatically<br />
 -- 53: sequencer and contingency abilities are learned from scrolls, and can also be learned during character generation and by sorcerers<br />
 -- 54: sequencer and contingency abilities can only be learned from scrolls<br />
+
+COMPONENTS 56: Fill Sequencers for Free
+
+This component changes the way sequencers and contingencies work: instead of using up your memorized spells, this will let you choose from your known spells, and no memorized spells will be "spent" to fill the sequencers. If you installed the Innate Metamagic component above, using sequencers will no longer immediately give you back the 'create sequencer' ability (because that would be an infinite spells glitch); the innate metamagic abilities will become normal once-per-day innates.
 
 COMPONENT 66: Innate Find Familiar
 

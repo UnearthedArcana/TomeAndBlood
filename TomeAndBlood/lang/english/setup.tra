@@ -20,7 +20,7 @@
 @52 = ~Innate metamagic, learned automatically but NOT by sorcerers~
 @53 = ~Innate metamagic, learned from scrolls or character generation~
 @54 = ~Innate metamagic, learned from scrolls ONLY (none for sorcerers)~
-@55 = ~Metamagic spells, fill sequencers free (usable by Arcanist/Multi Sorcerers)~
+@56 = ~Metamagic: fill sequencers for free~
 @66 = ~Innate Find Familiar~
 @70 = ~Sorcerer Spell Switching~
 @71 = ~Change spells every level~

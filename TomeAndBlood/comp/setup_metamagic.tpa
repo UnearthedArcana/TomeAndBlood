@@ -265,13 +265,17 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF ADD_SPELL_HEADER INT_VAR target = 1 END 
   COPY_EXISTING ~d5adsq1b.spl~ ~override~ 
 	LPF ADD_SPELL_EFFECT INT_VAR opcode = 177 target = 1 parameter1 = 5 parameter2 = 5 timing = 9 STR_VAR resource = ~d5adsq1~ END
+	LPF ADD_SPELL_EFFECT INT_VAR opcode = 206 target = 1 parameter1 = (0 - 1) timing = 9 STR_VAR resource = ~d5adsq1b~ END
 
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adsq2b.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 STR_VAR match_resource = ~d5adsq1~ resource = ~d5adsq2~ END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adsq2b~ END
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adsq3b.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 STR_VAR match_resource = ~d5adsq1~ resource = ~d5adsq3~ END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adsq3b~ END
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adcntb.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 STR_VAR match_resource = ~d5adsq1~ resource = ~d5adcnt~ END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adcntb~ END
 
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adsq1m.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
@@ -280,6 +284,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 14 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adsq1m~ END
   COPY_EXISTING ~d5adsq2b.spl~ ~override/d5adsq2m.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -287,6 +292,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 14 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq2b~ resource = ~d5adsq2m~ END
   COPY_EXISTING ~d5adsq3b.spl~ ~override/d5adsq3m.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -294,6 +300,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 14 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq3b~ resource = ~d5adsq3m~ END
   COPY_EXISTING ~d5adcntb.spl~ ~override/d5adcntm.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -301,24 +308,29 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 14 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adcntb~ resource = ~d5adcntm~ END
 
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adsq1s.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 19 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adsq1s~ END
   COPY_EXISTING ~d5adsq2b.spl~ ~override/d5adsq2s.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 19 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq2b~ resource = ~d5adsq2s~ END
   COPY_EXISTING ~d5adsq3b.spl~ ~override/d5adsq3s.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 19 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq3b~ resource = ~d5adsq3s~ END
   COPY_EXISTING ~d5adcntb.spl~ ~override/d5adcnts.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 19 END
+	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adcntb~ resource = ~d5adcnts~ END
 
 // add to CLAB tables
- APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        AP_D5ADSQ1M ****        ****        AP_D5ADCNTM ****        ****        AP_D5ADSQ2M ****        ****        AP_D5ADSQ3M ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+ APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        AP_D5ADSQ1M ****        ****        AP_D5ADCNTM ****        ****        AP_D5ADSQ2M ****        ****        AP_D5ADSQ3M ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1M~
  ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+  APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~GA_SPWI908~
  END
- APPEND ~clabba01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1B ****        ****        ****        ****        ****        AP_D5ADCNTB ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+ APPEND ~clabba01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1B ****        ****        ****        ****        ****        AP_D5ADCNTB ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1B~
  ACTION_IF %sequencer_method% = 1 BEGIN
-  APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1S ****        ****        AP_D5ADCNTS ****        ****        AP_D5ADSQ2S ****        ****        AP_D5ADSQ3S ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+  APPEND ~clabma01.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1S ****        ****        AP_D5ADCNTS ****        ****        AP_D5ADSQ2S ****        ****        AP_D5ADSQ3S ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1S~
  END
  COPY_EXISTING ~kitlist.2da~ ~override~
   COUNT_2DA_ROWS ~9~ "rows"
@@ -334,21 +346,25 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
  ACTION_PHP_EACH d5_meta_array AS bi => ko BEGIN
 // mage: levels 7/10/13/16
   ACTION_IF (%ko% = 1) BEGIN
-	APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        AP_D5ADSQ1M ****        ****        AP_D5ADCNTM ****        ****        AP_D5ADSQ2M ****        ****        AP_D5ADSQ3M ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+   ACTION_IF !(~%bi%~ STRING_EQUAL_CASE ~clabma01~) BEGIN
+	APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        AP_D5ADSQ1M ****        ****        AP_D5ADCNTM ****        ****        AP_D5ADSQ2M ****        ****        AP_D5ADSQ3M ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1M~
 	ACTION_IF (GAME_IS ~iwdee~) BEGIN
-	  APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+	  APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~GA_SPWI908~
 	END
+   END
   END
 // bard: levels 10/16
   ACTION_IF (%ko% = 5) BEGIN
-	APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1B ****        ****        ****        ****        ****        AP_D5ADCNTB ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+	APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1B ****        ****        ****        ****        ****        AP_D5ADCNTB ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1B~
   END
 // sorcerer: levels 8/11/14/17
   ACTION_IF %sequencer_method% = 1 BEGIN
 	ACTION_IF (%ko% = 19) BEGIN
-	  APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1S ****        ****        AP_D5ADCNTS ****        ****        AP_D5ADSQ2S ****        ****        AP_D5ADSQ3S ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
-	  ACTION_IF (GAME_IS ~iwdee~) BEGIN
-	    APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~
+      ACTION_IF !(~%bi%~ STRING_EQUAL_CASE ~clabma01~) BEGIN
+	    APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        AP_D5ADSQ1S ****        ****        AP_D5ADCNTS ****        ****        AP_D5ADSQ2S ****        ****        AP_D5ADSQ3S ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~AP_D5ADSQ1S~
+	    ACTION_IF (GAME_IS ~iwdee~) BEGIN
+	      APPEND ~%bi%.2da~ ~METAMAGIC   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        GA_SPWI908  ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        **** ~ UNLESS ~GA_SPWI908~
+	    END
 	  END
 	END
   END
@@ -362,6 +378,7 @@ END	//	end options 1+2
 // innate; learn metamagic from scrolls; may or may not be chosen as spells
 
 ACTION_IF (%sequencer_method% = 3) OR (%sequencer_method% = 4) BEGIN
+// ...do this no matter what...?
 
  ACTION_IF FILE_EXISTS_IN_GAME ~scrl6p.itm~ THEN BEGIN		// 	minor seq. scroll
 //	COPY ~TomeAndBlood/data/metamagic/mseqscrl.itm~ ~override/scrl6p.itm~
@@ -452,12 +469,12 @@ ACTION_IF (%sequencer_method% = 3) OR (%sequencer_method% = 4) BEGIN
   END 
  END
 
-END	//	end options 1+2
+END	//	end options 3+4
 
 
-// OPTION 5
+// COMPONENT 
 // -----------------------------
-// metamagic stay as spells; picked spells don't cost slots; compatible with multisorc
+// picked spells don't cost slots; compatible with multisorc
 
 ACTION_IF %sequencer_method% = 5 BEGIN
 
