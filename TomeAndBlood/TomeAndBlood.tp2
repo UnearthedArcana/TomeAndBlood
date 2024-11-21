@@ -33,6 +33,9 @@ LANGUAGE ~French~ ~french~
 		~TomeAndBlood/lang/english/setup.tra~ 
 		~TomeAndBlood/lang/french/setup.tra~
 
+LANGUAGE ~Simplified Chinese (translation: Lzw104522773)~ 
+                ~schinese~
+		~TomeAndBlood/lang/schinese/setup.tra~
 
 // -----------------------------
 // 20: REVISED DRAGON DISCIPLES
