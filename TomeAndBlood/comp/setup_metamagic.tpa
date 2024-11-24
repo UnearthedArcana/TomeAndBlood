@@ -232,33 +232,75 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 
  // make abilities to add innates
  CREATE EFF ~d5adsq1~
-  WRITE_LONG 0x10 171
-  WRITE_LONG 0x14 2
-  WRITE_LONG 0x24 9
-  WRITE_LONG 0x28 0
-  WRITE_SHORT 0x2c 100
-  WRITE_EVALUATED_ASCII 0x30 ~d5_seq1~ #8
+    WRITE_LONG 0x10 171
+    WRITE_LONG 0x14 2
+    WRITE_LONG 0x24 9
+    WRITE_LONG 0x28 0
+    WRITE_SHORT 0x2c 100
+    WRITE_EVALUATED_ASCII 0x30 ~d5_seq1~ #8
+    WRITE_LONG 0x90 1
+    WRITE_ASCII 0x94 ~D5ADSQ1~ #8
  CREATE EFF ~d5adsq2~
-  WRITE_LONG 0x10 171
-  WRITE_LONG 0x14 2
-  WRITE_LONG 0x24 9
-  WRITE_LONG 0x28 0
-  WRITE_SHORT 0x2c 100
-  WRITE_EVALUATED_ASCII 0x30 ~d5_seq2~ #8
+    WRITE_LONG 0x10 171
+    WRITE_LONG 0x14 2
+    WRITE_LONG 0x24 9
+    WRITE_LONG 0x28 0
+    WRITE_SHORT 0x2c 100
+    WRITE_EVALUATED_ASCII 0x30 ~d5_seq2~ #8
+    WRITE_LONG 0x90 1
+    WRITE_ASCII 0x94 ~D5ADSQ2~ #8
  CREATE EFF ~d5adsq3~
-  WRITE_LONG 0x10 171
-  WRITE_LONG 0x14 2
-  WRITE_LONG 0x24 9
-  WRITE_LONG 0x28 0
-  WRITE_SHORT 0x2c 100
-  WRITE_EVALUATED_ASCII 0x30 ~d5_seq3~ #8
+    WRITE_LONG 0x10 171
+    WRITE_LONG 0x14 2
+    WRITE_LONG 0x24 9
+    WRITE_LONG 0x28 0
+    WRITE_SHORT 0x2c 100
+    WRITE_EVALUATED_ASCII 0x30 ~d5_seq3~ #8
+    WRITE_LONG 0x90 1
+    WRITE_ASCII 0x94 ~D5ADSQ3~ #8
  CREATE EFF ~d5adcnt~
-  WRITE_LONG 0x10 171
-  WRITE_LONG 0x14 2
-  WRITE_LONG 0x24 9
-  WRITE_LONG 0x28 0
-  WRITE_SHORT 0x2c 100
-  WRITE_EVALUATED_ASCII 0x30 ~spwi617~ #8
+    WRITE_LONG 0x10 171
+    WRITE_LONG 0x14 2
+    WRITE_LONG 0x24 9
+    WRITE_LONG 0x28 0
+    WRITE_SHORT 0x2c 100
+    WRITE_EVALUATED_ASCII 0x30 ~spwi617~ #8
+    WRITE_LONG 0x90 1
+    WRITE_ASCII 0x94 ~D5ADCNT~ #8
+
+ //BLOCK SORCERERS
+ CREATE EFF ~d5nosq1~
+    WRITE_LONG 0x10 206
+    WRITE_LONG 0x14 0
+    WRITE_LONG 0x20 0
+    WRITE_LONG 0x24 0
+    WRITE_LONG 0x28 2
+    WRITE_SHORT 0x2c 100
+    WRITE_ASCII 0x30 ~D5ADSQ1~ #8
+ CREATE EFF ~d5nosq2~
+    WRITE_LONG 0x10 206
+    WRITE_LONG 0x14 0
+    WRITE_LONG 0x20 0
+    WRITE_LONG 0x24 0
+    WRITE_LONG 0x28 2
+    WRITE_SHORT 0x2c 100
+    WRITE_ASCII 0x30 ~D5ADSQ2~ #8
+ CREATE EFF ~d5nosq3~
+    WRITE_LONG 0x10 206
+    WRITE_LONG 0x14 0
+    WRITE_LONG 0x20 0
+    WRITE_LONG 0x24 0
+    WRITE_LONG 0x28 2
+    WRITE_SHORT 0x2c 100
+    WRITE_ASCII 0x30 ~D5ADSQ3~ #8
+ CREATE EFF ~d5nocnt~
+    WRITE_LONG 0x10 206
+    WRITE_LONG 0x14 0
+    WRITE_LONG 0x20 0
+    WRITE_LONG 0x24 0
+    WRITE_LONG 0x28 2
+    WRITE_SHORT 0x2c 100
+    WRITE_ASCII 0x30 ~D5ADCNT~ #8
  
  CREATE SPL ~d5adsq1b~
   COPY_EXISTING ~d5adsq1b.spl~ ~override~ 
@@ -285,6 +327,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq1b~ resource = ~d5adsq1m~ END
+	LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 177 target = 1 parameter1 = 19 parameter2 = 5 timing = 0 duration = 2 STR_VAR resource = ~d5nosq1~ END
   COPY_EXISTING ~d5adsq2b.spl~ ~override/d5adsq2m.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -293,6 +336,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq2b~ resource = ~d5adsq2m~ END
+	LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 177 target = 1 parameter1 = 19 parameter2 = 5 timing = 0 duration = 2 STR_VAR resource = ~d5nosq2~ END
   COPY_EXISTING ~d5adsq3b.spl~ ~override/d5adsq3m.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -301,6 +345,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adsq3b~ resource = ~d5adsq3m~ END
+	LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 177 target = 1 parameter1 = 19 parameter2 = 5 timing = 0 duration = 2 STR_VAR resource = ~d5nosq3~ END
   COPY_EXISTING ~d5adcntb.spl~ ~override/d5adcntm.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 1 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 7 END
@@ -309,6 +354,7 @@ ACTION_IF (%sequencer_method% = 1) OR (%sequencer_method% = 2) BEGIN
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 10 END
 	LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 177 match_parameter1 = 1 parameter1 = 17 END
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 206 STR_VAR match_resource = ~d5adcntb~ resource = ~d5adcntm~ END
+	LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 177 target = 1 parameter1 = 19 parameter2 = 5 timing = 0 duration = 2 STR_VAR resource = ~d5nocnt~ END
 
   COPY_EXISTING ~d5adsq1b.spl~ ~override/d5adsq1s.spl~ 
 	LPF ALTER_EFFECT INT_VAR silent = 1 match_opcode = 177 parameter1 = 19 END

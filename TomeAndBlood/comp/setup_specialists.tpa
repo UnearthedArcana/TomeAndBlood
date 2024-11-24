@@ -2968,7 +2968,7 @@ ACTION_FOR_EACH num IN ~22~ ~23~ ~24~ ~25~ ~26~ ~27~ ~28~ ~29~ BEGIN
   ACTION_FOR_EACH rac IN ~D~ ~E~ ~G~ ~H~ ~HE~ ~HL~ ~HO~ BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~K_M_%rac%.2da~ ~[%TAB% ]%num%[%WNL%%LNL%]~)) BEGIN
       ACTION_FOR_EACH mc IN ~FM~ ~CM~ ~MT~ BEGIN
-        ACTION_IF !(FILE_EXISTS_IN_GAME ~K_%mc%_%rac%~) BEGIN
+        ACTION_IF !(FILE_EXISTS_IN_GAME ~K_%mc%_%rac%.2da~) BEGIN
           COPY ~d5/kmr.2da~ ~override/K_%mc%_%rac%.2da~
         END
       END

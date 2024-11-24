@@ -1,6 +1,6 @@
 # TomeAndBlood
 
-Tome And Blood: More Options for Wizards and Sorcerers v1.1
+Tome And Blood: More Options for Wizards and Sorcerers v1.3
 
 ## Overview
 
@@ -78,11 +78,15 @@ This component gives each specialist kit some active or passive innate abilities
 
 COMPONENTS 51, 52, 53, 54: Innate Metamagic
 
-These components make spell sequencers and contingencies into innate abilities (Chain Contingency becomes an HLA) so they don't cost spell slots; but "filling" them with spells still uses the spell slots associated with those spells.  These four components differ according to how you get metamagic:
+These components make spell sequencers and contingencies into innate abilities - and Chain Contingency becomes an HLA. This means they don't cost spell slots; but "filling" them with spells still uses the spell slots associated with those spells.  Using a sequencer will immediately give you access to the 'create sequencer' ability, so you can do it multiple times per day, as long as you have enough memorized spells. But note, these metamagic spells now have the "non-combat" flag - they are meant to help you *prepare* for battles ahead of time. No more casting Chain Contingency within the thick of battle!  These four components differ according to how you get metamagic:
 -- 51: all arcane casters get sequencer and contingency abilities automatically<br />
 -- 52: only mages and bards (not sorcerers) get sequencer and contingency abilities automatically<br />
 -- 53: sequencer and contingency abilities are learned from scrolls, and can also be learned during character generation and by sorcerers<br />
 -- 54: sequencer and contingency abilities can only be learned from scrolls<br />
+
+COMPONENTS 56: Fill Sequencers for Free
+
+This component changes the way sequencers and contingencies work: instead of using up your memorized spells, this will let you choose from your known spells, and no memorized spells will be "spent" to fill the sequencers. If you installed the Innate Metamagic component above, using sequencers will no longer immediately give you back the 'create sequencer' ability (because that would be an infinite spells glitch); the innate metamagic abilities will become normal once-per-day innates.
 
 COMPONENT 66: Innate Find Familiar
 
@@ -120,13 +124,8 @@ Items like the Ring of Wizardry work by giving bonus spell slots to mages and bo
 
 Due to certain limitations, this can only allow each item to grant a +1 bonus at any given spell level. So for the sake of balance, all bonus-slot items will be modified to give a +1 bonus at their respective spell levels. This will notably change Edwin's Amulet in bg2 to give +1 spell per level instead of +2. Also BG2's Ring of Acuity, which usually grants +2 2nd-level spell slots, will instead grant +1 2nd-level slot. It may similarly change a few items in IWDEE.
 
-The "double spell slots" items, specifically the "Evermemory" Ring of Wizardry in BG1 and Kontik's & Edion's Rings of Wizardry in IWDEE, will work as normal for normal spellcasters and sorcerers; and for 5E-style casters and multiclass sorcerers they will get a once-per-day item ability to refresh all casting slots of the relevant levels. This way they can achieve their original design, doubling your spellcasting slots, even with these new technical limitations.
+The "double spell slots" items, specifically the "Evermemory" Ring of Wizardry in BG1 and Kontik's& Edion's Rings of Wizardry in IWDEE, will work as normal for normal spellcasters and sorcerers; and for 5E-style casters and multiclass sorcerers they will get a once-per-day item ability to refresh all casting slots of the relevant levels. This way they can achieve their original design, doubling your spellcasting slots, even with these new technical limitations.
 
-COMPONENT 95: Multiclass Specialists
-
-This component makes all of the specialist mage kits available in all of the fighter/mage, cleric/mage, and mage/thief kit screens. It does however adhere to the usual racial restrictions for both class access and kit access - so in an otherwise-unmodded game you will only see an effect with elves and half-elves.
-
-If you use a mod to broaden access to wizard multiclasses at the class or kit level, this component should be installed afterward.
 
 ##Bugs 
 
