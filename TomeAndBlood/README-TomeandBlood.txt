@@ -1,12 +1,24 @@
 # TomeAndBlood
 
-Tome And Blood: More Options for Wizards and Sorcerers v1.3
+Tome And Blood: More Options for Wizards and Sorcerers v1.4
 
 ## Overview
 
 Tome and Blood is a mod that revises and expands the class options for Mages and Sorcerers. This mod began as the Sorcerous Origins kitpack, which took advantage of the newly added Sorcerer kit options to add several kits to Sorcerers. It has since grown into a mod that makes changes to all Mage and Sorcerer kits, spells and items as well as adding dozens of new kits, abilities and functionality. 
  
 ##Features
+
+COMPONENT 10: Revised Wizard Spell Table
+
+This component gives two choices: the "unnerfed" spell table matches the one in the Tweaks Anthology mod, but is offered here to make install order easier. It matches the vanilla table but gives more spell slots at higher levels (20+). 
+
+The alternative "TnB" table does not give as many spell slots at very high levels as the "unnerfed" table (but still gives more than unmodded), but gives a bit more spell slots at *low* level, making life a bit better for mages in BG1.
+
+COMPONENT 10: Revised Sorcerer Spell Table
+
+This component gives two choices: the "unnerfed" spell table matches the one in the Tweaks Anthology mod, but is offered here to make install order easier. It matches the vanilla table but gives more spell slots at higher levels (20+). 
+
+The alternative "TnB" table is closer to the unmodded sorcerer table, except it gives more low-level spell slots, to make sure sorcerers stay ahead of wizards overall.
 
 COMPONENT 20: Revised Dragon Disciples
 

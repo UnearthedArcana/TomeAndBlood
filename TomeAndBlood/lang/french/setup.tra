@@ -4,7 +4,14 @@
 //arcane crafting ignored when 5E is installed
 @4 = ~ignore, parce que~
 
-@10 = ~Core Revisions~
+@10 = ~Revised Mage Spell Table~
+@11 = ~Tome & Blood Table~
+@12 = ~'Un-nerfed' Table~
+@15 = ~Revised Sorcerer Spell Table~
+@16 = ~Tome & Blood Table~
+@17 = ~'Un-nerfed' Table~
+//
+//
 @20 = ~Revision des Disciples du Dragon~
 @25 = ~Kit d'ensorceleur : Magus~
 //unused

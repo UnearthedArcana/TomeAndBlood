@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/TomeAndBlood~
 AUTHOR ~aquadrizzt~
-VERSION ~1.3.1~ 
+VERSION ~1.4~ 
 
 ALWAYS
 
@@ -32,6 +32,46 @@ LANGUAGE ~English~ ~english~ ~TomeAndBlood/lang/english/setup.tra~
 LANGUAGE ~French~ ~french~
 		~TomeAndBlood/lang/english/setup.tra~ 
 		~TomeAndBlood/lang/french/setup.tra~
+
+
+// -----------------------------
+// 10: REVISED MAGE SPELL TABLES
+// -----------------------------
+BEGIN @11
+DESIGNATED 11
+SUBCOMPONENT @10
+//GROUP @6
+
+COPY  ~TomeAndBlood/data/spell_tables/mxsplwiz_tnb.2da~ ~override/mxsplwiz.2da~
+
+// -----------------------------
+
+BEGIN @12
+DESIGNATED 12
+SUBCOMPONENT @10
+//GROUP @6
+
+COPY  ~TomeAndBlood/data/spell_tables/mxsplwiz_un.2da~ ~override/mxsplwiz.2da~
+
+
+// -----------------------------
+// 15: REVISED SORCERER SPELL TABLES
+// -----------------------------
+BEGIN @16
+DESIGNATED 16
+SUBCOMPONENT @15
+//GROUP @6
+
+COPY  ~TomeAndBlood/data/spell_tables/mxsplsrc_tnb.2da~ ~override/mxsplsrc.2da~
+
+// -----------------------------
+
+BEGIN @17
+DESIGNATED 17
+SUBCOMPONENT @15
+//GROUP @6
+
+COPY  ~TomeAndBlood/data/spell_tables/mxsplsrc_un.2da~ ~override/mxsplsrc.2da~
 
 
 // -----------------------------
