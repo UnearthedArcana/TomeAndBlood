@@ -32,7 +32,8 @@ LANGUAGE ~English~ ~english~ ~TomeAndBlood/lang/english/setup.tra~
 LANGUAGE ~French~ ~french~
 		~TomeAndBlood/lang/english/setup.tra~ 
 		~TomeAndBlood/lang/french/setup.tra~
-
+LANGUAGE ~Simplified Chinese~ ~schinese~
+		~TomeAndBlood/lang/schinese/setup.tra~
 
 // -----------------------------
 // 10: REVISED MAGE SPELL TABLES
