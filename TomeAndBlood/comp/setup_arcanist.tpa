@@ -143,16 +143,16 @@ NO_ASPLS    AP_D5Z0SPL  ****        ****        ****        ****        ****    
 
 ACTION_IF (MOD_IS_INSTALLED ~tomeandblood.tp2~ ~62~) BEGIN	//	L1 cantrips
   COPY_EXISTING ~d5zltac.spl~ ~override~
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (2 << 4) paramater1 = (1 << 4) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (3 << 4) paramater1 = (1 << 4) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (4 << 4) paramater1 = (1 << 4) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (5 << 4) paramater1 = (1 << 4) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (6 << 8) paramater1 = (7 << 8) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (5 << 8) paramater1 = (6 << 8) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (4 << 8) paramater1 = (5 << 8) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (3 << 8) paramater1 = (4 << 8) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (2 << 8) paramater1 = (3 << 8) END
-    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (1 << 8) paramater1 = (2 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (2 << 4) parameter1 = (1 << 4) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (3 << 4) parameter1 = (1 << 4) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (4 << 4) parameter1 = (1 << 4) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (5 << 4) parameter1 = (1 << 4) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (6 << 8) parameter1 = (7 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (5 << 8) parameter1 = (6 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (4 << 8) parameter1 = (5 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (3 << 8) parameter1 = (4 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (2 << 8) parameter1 = (3 << 8) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 233 match_parameter1 = (1 << 8) parameter1 = (2 << 8) END
     LPF ADD_SPELL_EFFECT INT_VAR header = 2 opcode = 233 target = 1 parameter1 = (1 << 8) parameter2 = (108 + (0x10000 * 1)) timing = 9 END
   IF_EXISTS BUT_ONLY
 END

@@ -688,6 +688,8 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d5xrfsh.spl~ BEGIN
 	LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 1 timing = 1 STR_VAR resource = ~d5src8z~ END
 	LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 target = 1 timing = 1 STR_VAR resource = ~d5src9z~ END
     LPF ADD_SPELL_EFFECT INT_VAR opcode = 326 target = 1 parameter1 = %semi_sorc_state% parameter2 = 110 timing = 4 duration = 1 STR_VAR resource = ~d5xspls~ END
+// add this vvv to prevent spells blinking on/off while fatigue = 0
+	LPF ADD_SPELL_EFFECT INT_VAR opcode = 318 insert_point = 0 target = 1 parameter1 = %semi_spont_rest% parameter2 = 110 timing = 0 duration = 1 STR_VAR resource = ~d5xrfsh~ END
 END
 
 ACTION_IF !(FILE_EXISTS_IN_GAME ~d5zrest.spl~) BEGIN
